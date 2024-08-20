@@ -1,75 +1,43 @@
-### System Specifications
-
-| Requirements | Versions |
-| :----------: | :------: |
-|   LARAVEL    |   10.x    |
-|     PHP      | ^8.1.10  |
-|    MYSQL     |   ^10.4.25   |
 
 ## Configuration
 
-1.  Clone this repository.
+1.  For Laravel Dusk install php and composer first and open the QA-Exam repository
+
+2.  To install laravel dusk, enter this command
 
     ```bash
-        $   git clone https://github.com/ericnicdao069/backend-dev-exam.git
+        $   composer require --dev laravel/dusk
     ```
 
-2.  Recreate environment variable file.
+3.  Install dusk binary
 
     ```bash
-        $   cp .env.example .env
+        $   php artisan dusk:install
     ```
 
-3.  Install composer and npm.
-
-    ```bash
-        $   composer install && npm install
-    ```
-
-4.  Generate Application Key.
-
-    ```bash
-        $   php artisan key:generate
-    ```
-
-5.  Create your DB and update your DB configs in .env.
-
-    ```bash
-        $   DB_CONNECTION=mysql
-        $   DB_HOST=127.0.0.1
-        $   DB_PORT=3306
-        $   DB_DATABASE=laravel
-        $   DB_USERNAME=root
-        $   DB_PASSWORD=
-    ```
-
-6.  Execute Database Migration and Seeders.
-
-    ```bash
-        $   php artisan migrate --seed
-    ```
-
-7.  Create a symlink for Storage in Public Directory.
-
-    ```bash
-        $   php artisan storage:link
-    ```
-
-8.  Generate Ziggy routes.
-
-    ```bash
-        $   php artisan ziggy:generate
-    ```
-
-9.  Run local server.
+4.  Run the local server
 
     ```bash
         $   php artisan serve
     ```
 
-10.  Front Build.
+5.  Run front build
 
     ```bash
         $   npm run dev
+        
+    ```
+
+6.  Run
+
+    ```bash
         $   npm run build
     ```
+
+7.  In your IDE go to /test/browser and you will see 3 test files, "inputTest.php","invalidtest.php", "viewPageTest.php" and run
+
+    ```bash
+        $   php artisan dusk
+    ```
+
+

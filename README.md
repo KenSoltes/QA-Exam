@@ -51,21 +51,26 @@
     ```bash
         $   npm init playwright@latest
     ```
+11. Run this command for dependencies
+    
    ```bash
         $   npx playwright install --with-deps
-    ```
-11. In the repository, you will see e2e folder
+   ```
+12. In the repository, you will see e2e folder
 
-12. Click the folder and you will see 3 test
+13. Click the folder and you will see 3 test
 
-13. Run this command in the terminal
+14. Run this command in the terminal
     
-    ```bash
-        $   npm init playwright@latest
-    ```
-
     ```bash
         $   npx playwright test
     ```
+
+  
+
+
+
+
+
 
 
